@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Page</title>
+    
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        header {
+         background: linear-gradient(135deg, #242424, #1620a5);
+         color: #fff;
+         padding-top: 20px;
+         min-height: 70px;
+         border-bottom: #121313 3px solid;
+         display: flex;
+         justify-content: space-between; 
+         align-items: center;
+         padding: 0 20px;
+        }
+
+        header .logo {
+         font-size: 24px;     
+         margin: 0;
+         display: flex;
+         align-items: center;
+        }
+        header .logo-img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        header nav {
+          width: auto;              
+          display: flex;
+          justify-content: flex-start; 
+          margin-left: 26px;         
+        }
+        
+        header nav ul {
+           margin: 0;
+           display: flex;
+           gap: 20px; 
+           padding: 0;
+           list-style: none;
+        }
+
+        header nav li {
+            margin: 0; 
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #000000;
+        }
+
+        #about {
+            background: linear-gradient(135deg, #1954cb, #00fff2);
+            padding: 40px 0;
+            text-align: center;
+         }
+
+        #about h3 {
+            color: #ffffff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-content img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #151515;
+        }
+
+        .about-content p {
+            flex: 1;
+            text-align: left;
+            max-width: 600px;
+        }
+
+        #projects {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        #projects h2 {
+            color: #0779e4;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .project-item h4 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .kontak {
+            background: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .kontak h2 {
+            color: #0779e4;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* --- Media Queries for Responsiveness --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                margin-top: 10px;
+            }
+
+            header nav li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-content p {
+                text-align: center;
+            }
+
+            .project-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="logonemtas.png" alt="logo" class="logo-img">MyWebsite</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">About Me</a></li>
+                    <li><a href="index3.html">My Projects</a></li>
+                    <li><a href="index4.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h3>About Me</h3>
+            <div class="about-content">
+                <img src="aan.jpg" alt="Foto Saya">
+                <h4><p>My name is Maulidaniyaz Akmal Khan, I am a disciplined, responsible person, and I always strive to develop myself. I am currently studying at a vocational high school with a major in Software Engineering (RPL), where I learn about programming, application development, and information technology.</p></h4>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 MyWebsite | Created by Maulidaniyaz Akmal Khan</p>
+    </footer>
+</body>
+</html>
